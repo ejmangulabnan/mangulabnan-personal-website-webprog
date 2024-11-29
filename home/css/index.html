@@ -4,32 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add left margin to the del div */
+        .del {
+            margin-left: 50px; /* Adds space only to the left side of the div */
+            text-align: left; /* Aligns text to the left */
+            background-color: #f9f9f9; /* Adds a background for visibility */
+            padding: 20px; /* Adds inner spacing */
+            border: 1px solid #ddd; /* Adds a border for clarity */
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+        }
+        p {
+            font-family: Georgia, serif;
+        }
+        /* Hero section styling */
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+        }
+        nav a {
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+        .images img {
+            margin: 10px;
+            max-width: 100px; /* Adjust size as needed */
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+    </style>
 </head>
 <body>
     <div class="hero">
         <nav>
             <img src="images/APC LOGO.png" alt="logo" width="100" height="100">
-
             <ul>
-            
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">EDUCATION</a></li>
-            <li><a href="#">ACHIEVEMENTS</a></li>
-            <li><a href="#">PHOTO GALLERY</a></li>
-            <li><a href="#">HOBBIES</a></li>
-            <li><a href="#">GOALS IN LIFE</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">EDUCATION</a></li>
+                <li><a href="#">ACHIEVEMENTS</a></li>
+                <li><a href="#">PHOTO GALLERY</a></li>
+                <li><a href="#">HOBBIES</a></li>
+                <li><a href="#">GOALS IN LIFE</a></li>
             </ul>
         </nav>
         <div class="del">
             <h1>I'm Edgardo <span>Mangulabnan <span>Jr.</span></span></h1>
-            <P>This is my Personal Website
+            <p>This is my Personal Website
                 <br>Created for my WEBPROG class
-            </P>
+            </p>
         </div>
         <div class="images">
-            <img src="images/red bg.png" class="red_bg">
-            <img src="images/gado clear bg.png" class="gado_clear_bg">
+            <img src="images/red bg.png" class="red_bg" alt="Red Background">
+            <img src="images/gado clear bg.png" class="gado_clear_bg" alt="Gado Clear Background">
         </div>
     </div>
 </body>
