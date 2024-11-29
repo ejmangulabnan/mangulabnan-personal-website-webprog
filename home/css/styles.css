@@ -42,4 +42,21 @@ nav ul li a:hover{
     bottom: 0;
     right: 100px;
 }
-    
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translatex(-50%);
+    transition: bottom 1s, left 1s;
+
+}
+
+.images:hover .red_bg{
+    bottom: 40px;
+}
+
+.images:hover .gado_clear_bg{
+    left: 45%;
+}
