@@ -53,10 +53,10 @@ nav ul li a:hover{
 
 }
 
-.images:hover .red_bg{
-    bottom: 40px;
-}
-
 .images:hover .gado_clear_bg{
     left: 45%;
+}
+
+.images:hover .red_bg{
+    bottom: 40px;
 }
