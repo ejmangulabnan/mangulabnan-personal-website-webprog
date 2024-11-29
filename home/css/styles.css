@@ -34,3 +34,12 @@ nav ul li a{
 nav ul li a:hover{
     color: red;
 }
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+    
