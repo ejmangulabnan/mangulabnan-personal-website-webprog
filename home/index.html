@@ -1,7 +1,40 @@
 <!DOCTYPE html>    
 <html> 
-<head>
-<title> Personal Profile Webpage</title>
+<head> 
+  <title> Personal Profile Webpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f9;
+          margin: 0;
+          padding: 20px;
+      }
+
+      h1 {
+          text-align: center;
+          color: #333;
+      }
+
+      .flex-container {
+          display: flex;
+          justify-content: space-around; /* Space out images evenly */
+          align-items: center; /* Align images vertically */
+          background-color: #000; /* Background for visual testing */
+          padding: 20px;
+          gap: 10px; /* Adds space between items */
+      }
+
+      .flex-container img {
+          width: 150px; /* Adjust image size */
+          height: auto;
+          border-radius: 8px; /* Rounded corners for a nice look */
+          border: 2px solid #fff; /* Optional border */
+      }
+  </style>
+
 </head>
 <body>
 
@@ -57,38 +90,14 @@ I am 21 years old and a 2nd year college student in Asia Pacific College. </p>
 
 
 
-<h3>Picture Gallery</h3>    
-<style>
-  .flex-container {
-    display: flex;
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .flex-container > div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-  }
-</style>
-    </head>
-    <body>
-    
-    <h1>Create a Flex Container</h1>
-    
+    <h1>Photo Gallery</h1>
+
     <div class="flex-container">
-      <div><img src="home/images/grad_pic.jpg" alt="Graduation Picture"></div>
-      <div><img src="home/images/gado_and_pat.jpg" alt="Photo"></div>
-      <div><img src="home/images/small_gado.jpg" alt="My old Photo"></div> 
-      <div><img src="https://via.placeholder.com/150" alt="Test Image"></div>
+        <!-- Replace with your image paths -->
+        <img src="home/images/grad_pic.jpg" alt="Graduation Picture">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        <img src="home/images/small_gado.jpg" alt="My Old Photo">
     </div>
-    
-    
-    <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
-    
-    <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
-    
-</p>       
 
 </body>
 </html> 
