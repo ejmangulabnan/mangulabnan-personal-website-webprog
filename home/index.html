@@ -107,10 +107,11 @@
       gap: 20px;
     }
 
-    /* Prevent image compression, maintain aspect ratio */
+    /* Prevent image compression, keep a fixed size but maintain aspect ratio */
     .section.flex img {
-      max-width: 100%;   /* Ensures images scale down to fit their container */
-      height: auto;      /* Maintains aspect ratio */
+      width: 300px;   /* Fixed width */
+      height: 200px;  /* Fixed height */
+      object-fit: cover;  /* Ensures the aspect ratio is maintained and the image covers the given area */
       border-radius: 10px;
     }
 
@@ -133,10 +134,11 @@
       flex-wrap: wrap;
     }
 
-    /* Prevent image compression, maintain aspect ratio */
+    /* Prevent image compression, keep a fixed size but maintain aspect ratio */
     .gallery-images img {
-      max-width: 100%;   /* Ensures images scale down to fit the container */
-      height: auto;      /* Maintains aspect ratio */
+      width: 300px;   /* Fixed width */
+      height: 200px;  /* Fixed height */
+      object-fit: cover;  /* Ensures the aspect ratio is maintained and the image covers the given area */
       border-radius: 10px;
     }
 
@@ -169,7 +171,7 @@
       }
 
       .gallery-images img {
-        width: 150px;
+        width: 200px;
         height: 150px;
       }
 
