@@ -107,9 +107,10 @@
       gap: 20px;
     }
 
+    /* Prevent image compression, maintain aspect ratio */
     .section.flex img {
-      width: 300px;
-      height: auto;
+      max-width: 100%;   /* Ensures images scale down to fit their container */
+      height: auto;      /* Maintains aspect ratio */
       border-radius: 10px;
     }
 
@@ -132,9 +133,10 @@
       flex-wrap: wrap;
     }
 
+    /* Prevent image compression, maintain aspect ratio */
     .gallery-images img {
-      width: 200px;
-      height: 200px;
+      max-width: 100%;   /* Ensures images scale down to fit the container */
+      height: auto;      /* Maintains aspect ratio */
       border-radius: 10px;
     }
 
