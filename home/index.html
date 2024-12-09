@@ -11,10 +11,10 @@
       margin: 0;
       padding: 0;
       background-image: url('https://i.pinimg.com/736x/e3/65/0f/e3650f85ecd0e950bd025cb000503fd0.jpg');
-      background-size: contain;
+      background-size: cover; /* Ensures the image covers the whole screen */
       background-position: center;
       background-repeat: no-repeat;
-      height: 100vh;
+      height: 100vh; /* Ensures the background covers the whole viewport */
     }
 
     /* Semi-transparent overlay */
@@ -24,7 +24,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
       z-index: -1;
     }
 
@@ -46,7 +46,7 @@
       grid-row: 1;
       text-align: center;
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.6); /* Adjusted opacity for more transparency */
     }
 
     /* Main Content Section using Grid */
@@ -60,9 +60,43 @@
 
     /* Section Styling */
     .section {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.6); /* Adjusted opacity for more transparency */
       padding: 20px;
       border-radius: 10px;
+    }
+
+    /* Section Header Styling */
+    .section h2 {
+      padding: 10px;
+      color: white;
+      font-size: 1.2em;
+      margin: 0;
+      border-radius: 5px;
+    }
+
+    /* Custom Colors for Each Section Header */
+    .section.education h2 {
+      background-color: #4CAF50; /* Green */
+    }
+
+    .section.achievements h2 {
+      background-color: #2196F3; /* Blue */
+    }
+
+    .section.course h2 {
+      background-color: #FF9800; /* Orange */
+    }
+
+    .section.it-experience h2 {
+      background-color: #9C27B0; /* Purple */
+    }
+
+    .section.hobbies h2 {
+      background-color: #FF5722; /* Deep Orange */
+    }
+
+    .section.goals h2 {
+      background-color: #607D8B; /* Blue-grey */
     }
 
     /* Flexbox used inside About Me section */
@@ -81,7 +115,7 @@
 
     /* Gallery Section using Flexbox */
     .gallery {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.6); /* Adjusted opacity for more transparency */
       padding: 20px;
       border-radius: 10px;
       text-align: center;
@@ -123,7 +157,7 @@
       grid-row: 3;
       text-align: center;
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.6); /* Adjusted opacity for more transparency */
     }
 
     /* Responsive Design for Mobile */
@@ -160,13 +194,12 @@
         <div>
           <h2>About Me</h2>
           <p>Hi! I am Edgardo Mangulabnan Jr., but you can call me Gado. I am 21 years old and a 3rd-year college student at Asia Pacific College.</p>
-          
         </div>
         <img src="https://i.pinimg.com/736x/2e/1a/f3/2e1af38da547b3dad91c3489b736424f.jpg" alt="capybara">
       </section>
 
       <!-- Education Section -->
-      <section class="section">
+      <section class="section education">
         <h2>Education</h2>
         <p>• Junior High School Graduate - Bangkal High School Main (2016-2020)</p>
         <p>• Senior High School Graduate - Asia Pacific College (2020-2022)</p>
@@ -174,7 +207,7 @@
       </section>
 
       <!-- Achievements Section -->
-      <section class="section">
+      <section class="section achievements">
         <h2>Academic Achievements</h2>
         <p>• Scrum Certified - Asia Pacific College (2022)</p>
         <h2>Non-Academic Achievements</h2>
@@ -186,19 +219,19 @@
       </section>
 
       <!-- Course Section -->
-      <section class="section">
+      <section class="section course">
         <h2>Course</h2>
         <p>BS-IT (MI)</p>
       </section>
 
       <!-- IT Experience Section -->
-      <section class="section">
+      <section class="section it-experience">
         <h2>IT Experience</h2>
         <p>None</p>
       </section>
 
       <!-- Hobbies Section -->
-      <section class="section">
+      <section class="section hobbies">
         <h2>Hobbies & Interests</h2>
         <ul>
           <li>Music</li>
@@ -209,12 +242,11 @@
       </section>
 
       <!-- Goals Section -->
-      <section class="section">
+      <section class="section goals">
         <h2>Goals in Life</h2>
-        <p> I have a lot of aspirations that have shaped my life and my journey. Since I was a kid, I’ve always looked up to my lolo (grandfather), who became a significant influence on my upbringing. He was a lawyer, and seeing the impact he made in his field inspired me to consider following in his footsteps. His profession has always been something I admire, and I still hold a deep respect for it today. However, as much as I admire the legal profession, my true passion lies in music. 
-    From a young age, I’ve been drawn to the world of sound, and this love for music was further nurtured by my lolo. He introduced me to various genres and musicians, sparking my dream of pursuing music seriously. I play in a band, and after I graduate from college, my goal is to pursue a career in music. Specifically, I want to become a rock icon like Angus Young, whose energy and dedication to his craft have always inspired me. As an IT student, 
-    I’m also focused on building a solid career in technology, combining my love for music with the skills I am learning in this field. I want to explore how technology can influence and enhance the music industry. Whether through sound engineering, creating innovative music apps, or contributing to the growth of the digital music scene, my journey in IT and music is just beginning, and I’m excited to see where it leads.</p>
-
+        <p>I have a lot of aspirations that have shaped my life and my journey. Since I was a kid, I’ve always looked up to my lolo (grandfather), who became a significant influence on my upbringing. He was a lawyer, and seeing the impact he made in his field inspired me to consider following in his footsteps. His profession has always been something I admire, and I still hold a deep respect for it today. However, as much as I admire the legal profession, my true passion lies in music. 
+        From a young age, I’ve been drawn to the world of sound, and this love for music was further nurtured by my lolo. He introduced me to various genres and musicians, sparking my dream of pursuing music seriously. I play in a band, and after I graduate from college, my goal is to pursue a career in music. Specifically, I want to become a rock icon like Angus Young, whose energy and dedication to his craft have always inspired me. As an IT student, 
+        I’m also focused on building a solid career in technology, combining my love for music with the skills I am learning in this field. I want to explore how technology can influence and enhance the music industry. Whether through sound engineering, creating innovative music apps, or contributing to the growth of the digital music scene, my journey in IT and music is just beginning, and I’m excited to see where it leads.</p>
       </section>
     </main>
 
@@ -222,9 +254,9 @@
     <section class="gallery">
       <h2>Picture Gallery</h2>
       <div class="gallery-images">
-        <img src="images/grad_pic.jpg" alt="Graduation Picture">
-        <img src="images/gado_and_pat.jpg" alt="Photo">
-        <img src="images/small_gado.jpg" alt="Old Photo">
+        <img src="home/images/grad_pic.jpg" alt="Graduation Picture">
+        <img src="home/images/gado_and_pat.jpg" alt="Photo">
+        <img src="home/images/small_gado.jpg" alt="Old Photo">
       </div>
     </section>
 
